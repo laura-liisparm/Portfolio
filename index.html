@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobi_projekt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigatsioon -->
+    <nav>
+      <div class="container"></div>
+    </nav>
+
+    <!-- Sisu-->
+    <main>
+      <div class="container">
+        <!-- Hero sektsiooni algus-->
+        <section id="hero">
+          <!-- Decorative Icons -->
+          <div class="decorative" style="top: 5rem; left: 2.5rem">
+            <!-- Sparkles -->
+            <svg
+              class="icon sparkle"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M12 3v2m0 14v2m9-9h-2m-14 0H3m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95l-1.414 1.414M8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"
+              />
+            </svg>
+          </div>
+          <div class="decorative" style="top: 10rem; right: 5rem">
+            <!-- Heart -->
+            <svg
+              class="icon heart"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M19 14c1.49-1.46 2-2.93 2-4.5A4.5 4.5 0 0 0 16.5 5c-1.54 0-3.04.99-4.5 3-1.46-2.01-2.96-3-4.5-3A4.5 4.5 0 0 0 3 9.5c0 1.57.51 3.04 2 4.5l7 7Z"
+              />
+            </svg>
+          </div>
+          <div class="decorative" style="bottom: 8rem; left: 25%">
+            <!-- Code2 -->
+          </div>
+          <div class="decorative" style="bottom: 10rem; right: 33%">
+            <!-- Heart -->
+            <svg
+              class="icon heart"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M19 14c1.49-1.46 2-2.93 2-4.5A4.5 4.5 0 0 0 16.5 5c-1.54 0-3.04.99-4.5 3-1.46-2.01-2.96-3-4.5-3A4.5 4.5 0 0 0 3 9.5c0 1.57.51 3.04 2 4.5l7 7Z"
+              />
+            </svg>
+          </div>
+
+          <!-- Blurry Background Circles -->
+          <div class="circle-deco" style="top: 25%; left: -5rem"></div>
+          <div class="circle-deco" style="bottom: 25%; right: -5rem"></div>
+
+          <div class="container">
+            <!-- LEFT -->
+            <div class="hero-text">
+              <span class="badge">
+                <!-- Sparkles -->
+                <svg
+                  class="icon small-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M12 3v2m0 14v2m9-9h-2m-14 0H3m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95l-1.414 1.414M8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z"
+                  />
+                </svg>
+                Arendaja & Palju muud
+              </span>
+              <h1>Tere, mina olen <span class="primary">Laura</span></h1>
+              <h2>
+                Loov Arendaja
+                <span class="handwriting">kes koodib roosades toonides</span>
+              </h2>
+              <p>
+                Loon ilusaid ja funktsionaalseid digikogemusi, mis ühendavad
+                innovaatilise disaini ja puhta koodi. Ehitame koos midagi
+                erilist!
+              </p>
+
+              <div class="buttons">
+                <button class="btn" onclick="scrollToSection('projects')">
+                  Vaata projekte
+                </button>
+                <button
+                  class="btn btn-outline"
+                  onclick="scrollToSection('contact')"
+                >
+                  Võta ühendust
+                </button>
+              </div>
+
+              <div class="socials">
+                <a href="https://github.com" target="_blank">
+                  <!-- Github -->
+                  <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/forma-thin-sharp/24/github.png"
+                    alt="github"
+                  />
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                  <!-- Linkedin -->
+                  <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/ios/50/linkedin-2--v1.png"
+                    alt="linkedin-2--v1"
+                  />
+                </a>
+                <a href="mailto:hello@example.com">
+                  <!-- Mail -->
+                  <img
+                    width="24"
+                    height="24"
+                    src="https://img.icons8.com/windows/32/gmail.png"
+                    alt="gmail"
+                  />
+                </a>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path d="m18 16 4-4-4-4" />
+                  <path d="m6 8-4 4 4 4" />
+                  <path d="m14.5 4-5 16" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- RIGHT (Image + Floating Cards) -->
+            <div class="hero-image">
+              <img
+                src="https://images.unsplash.com/photo-1596128045726-c802b5373928?auto=format&q=80&w=1080"
+                alt="Workspace"
+              />
+
+              <div class="floating-card" style="top: -1rem; right: 6rem">
+                <div class="card-icon">💻</div>
+                <div class="card-text">
+                  <p class="small">Koodiridu</p>
+                  <p class="large">10,000+</p>
+                </div>
+              </div>
+
+              <div class="floating-card" style="bottom: -1rem; left: -1rem">
+                <div class="card-icon">❤️</div>
+                <div class="card-text">
+                  <p class="small">Tehtud</p>
+                  <p class="large handwriting">Armastusega</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Hero sektsiooni lõpp-->
+
+        <section></section>
+
+        <section></section>
+
+        <section></section>
+
+        <section></section>
+
+        <section></section>
+
+        <section></section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <!-- Footeri sisu -->
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
