@@ -36,8 +36,6 @@ button {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background: linear-gradient(
     135deg,
     oklch(0.98 0.03 350) 0%,
@@ -96,17 +94,14 @@ button {
 .container {
   margin: 0 auto;
   display: flex; /* places children in a row */
-  justify-content: space-between; /* keeps them apart nicely */
-  max-width: 1200px;
-  max-width: none;
-  width: 100%;
+  justify-content: center;
+  outline: red 5px solid; /* for debugging */
 }
 /* --- Text Content --- */
 .hero-text {
-  max-width: 600px;
-  padding-left: 8rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
   z-index: 1;
-  outline: red solid 5px;
 }
 .hero-text .badge {
   display: inline-flex;
@@ -216,12 +211,12 @@ button {
 /* --- Image Side --- */
 .hero-image {
   position: relative;
-  padding-right: 8rem;
-  outline: blue solid 5px;
+  padding-right: 4rem;
+  padding-left: 2rem;
 }
 
 .hero-image img {
-  width: 100%;
+  width: 600px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 2rem;
@@ -294,7 +289,7 @@ button {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
