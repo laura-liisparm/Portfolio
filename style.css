@@ -1,5 +1,4 @@
 /* --- Root variables --- */
-/* --- Root variables --- */
 :root {
   --primary: #ff66a3;
   --primary-light: rgba(255, 102, 163, 0.1);
@@ -7,27 +6,55 @@
   --handwriting: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* --- Basic resets --- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Header section*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+.font-handwriting {
+  font-family: "Dancing Script", cursive;
+  outline: red 5px solid; /* for debugging */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #111;
-  background: #fff;
+/* Navbar link styles */
+.nav-link {
+  position: relative;
+  font-size: 0.9rem;
+  color: #000000;
+  transition: color 0.3s;
+  float: right;
+  padding-bottom: 4px;
 }
 
-a {
-  text-decoration: none;
+.nav-link:hover {
+  color: #ff66a3;
 }
 
-button {
-  cursor: pointer;
-  border: none;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff66a3;
+  border-radius: 9999px;
+  transition: width 0.3s;
 }
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Custom primary color */
+.text-primary {
+  color: #ff66a3;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+/* End of header section*/
 
 /* --- Hero section --- */
 #hero {
@@ -95,7 +122,6 @@ button {
   margin: 0 auto;
   display: flex; /* places children in a row */
   justify-content: center;
-  outline: red 5px solid; /* for debugging */
 }
 /* --- Text Content --- */
 .hero-text {
