@@ -65,7 +65,9 @@ document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("Tänan! See on demo, seega sõnumit ei saadeta.");
+    alert(
+      "Tänan! Veebileht on loodud harjutamise eesmärgil, seega sõnumit ei saadeta."
+    );
     this.reset();
   });
 
