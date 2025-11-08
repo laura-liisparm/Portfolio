@@ -1,4 +1,4 @@
-// Navigation scroll effect
+// navigatsiooniriba taust ja varju muutmine kerimisel
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
   if (window.scrollY > 20) {
@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Smooth scroll to section
+// sujuv kerimine sektsioonidele
 function scrollToSection(sectionId) {
   const element = document.getElementById(sectionId);
   if (element) {
@@ -20,7 +20,7 @@ function scrollToSection(sectionId) {
   }
 }
 
-// Navigation hover effect
+// Navigatsioonilingi allakriipsutuse animatsioon
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("mouseenter", function () {
     const underline = this.querySelector(".nav-underline");
@@ -32,7 +32,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-// Intersection Observer for scroll animations
+// Intersection Observer sektsioonide animatsioon
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -100px 0px",
@@ -43,7 +43,7 @@ const observer = new IntersectionObserver(function (entries) {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
 
-      // Animate progress bars
+      // Animeerige edenemisribad, kui need on olemas
       const progressBars = entry.target.querySelectorAll(".progress-bar");
       progressBars.forEach((bar) => {
         const width = bar.getAttribute("data-width");
@@ -55,12 +55,12 @@ const observer = new IntersectionObserver(function (entries) {
   });
 }, observerOptions);
 
-// Observe all sections
+// Observeeri kõiki sektsioone, millel on klass "section-animate"
 document.querySelectorAll(".section-animate").forEach((section) => {
   observer.observe(section);
 });
 
-// Contact form submission
+// Kontaktivormi käsitlemine
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
@@ -71,10 +71,10 @@ document
     this.reset();
   });
 
-// Set current year
+// Aasta automaatne värskendamine jaluses
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
-// Mobile menu toggle (basic implementation)
+// Mobiilse menüü nupu käsitlemine
 document
   .getElementById("mobile-menu-btn")
   .addEventListener("click", function () {

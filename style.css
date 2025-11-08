@@ -1,12 +1,4 @@
-/* --- Root variables --- */
-:root {
-  --primary: #ff66a3;
-  --primary-light: rgba(255, 102, 163, 0.1);
-  --text-muted: #888;
-  --handwriting: "Comic Sans MS", cursive, sans-serif;
-}
-
-/* Reset & Base Styles */
+/* Baasstiilling */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +19,7 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-/* Animations */
+/* Animatsioonid */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -92,7 +84,7 @@ body {
   }
 }
 
-/* Animation Classes */
+/* Animatsiooni Klassid */
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
@@ -117,7 +109,7 @@ body {
   animation: bounce 2s ease-in-out infinite;
 }
 
-/* Visibility */
+/* Nähtavus */
 .opacity-0 {
   opacity: 0;
 }
@@ -126,7 +118,7 @@ body {
   opacity: 1;
 }
 
-/* Card Hover Effects */
+/* Laartide Hover Effects */
 .card {
   transition: all 0.3s ease;
 }
@@ -136,7 +128,7 @@ body {
   box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
 }
 
-/* Progress Bar Animation */
+/* Progress bar effektid */
 .progress-bar {
   width: 0;
   transition: width 1s ease-out;
@@ -146,7 +138,7 @@ body {
   width: var(--progress-width);
 }
 
-/* Custom Scrollbar */
+/* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -164,7 +156,7 @@ body {
   background: oklch(0.55 0.24 350);
 }
 
-/* Section Animations */
+/* Sektsiooni animatsioonid */
 .section-animate {
   opacity: 0;
   transform: translateY(30px);
@@ -176,7 +168,7 @@ body {
   transform: translateY(0);
 }
 
-/* Navigation Underline */
+/* Navigatsiooni allakriipsutamine */
 .nav-underline {
   width: 0;
   transition: width 0.3s ease;
